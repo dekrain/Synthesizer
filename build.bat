@@ -1,0 +1,1 @@
+clang -o synth.exe -static -O -Wall -Wextra *.cpp -std=c++17 engine/*.cpp %*

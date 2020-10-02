@@ -1,0 +1,27 @@
+[ ] - Not done
+[X] - Done
+[O] - Partialy done
+
+1. Cave age
+[X] Generate 3.5 sec 44100 Hz sampling frequency 440 Hz saw wave
+[X] Generate 3.5 sec 440 Hz saw wave with ADSR (decay on end)
+[X] Generate 3.5 sec 440 Hz sine/square/triangle wave
+[ ] Play the sound live (audio device w/ real-time sound generation)
+
+2. Stone age
+[X] Generate two plucks playing at once with different pitches
+[X] Make them start at different times
+[X] Make and program a basic sequencer (prefferably from a score file)
+-> [X] Support MIDI (score loading) - Success ^.^
+
+3. Iron age
+[O] Add additive synthesis
+[ ] Re-structure data flow to allow effects
+[ ] Create and use basic effects:
+-> [ ] A low-pass filter
+-> [ ] Delay effect
+-> [ ] Gain
+[ ] Make a pluck with volume and cutoff low-pass decay
+[ ] Add effect units like filters, delays, chorus
+-> [ ] Delay bank unit
+-> [ ] Chorus effect/Unison to the synth
