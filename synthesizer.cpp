@@ -1,7 +1,7 @@
 #include <cstring>
 #include <vector>
 
-#include "synthesizer.h"
+#include "synthesizer.hpp"
 
 Synthesizer::~Synthesizer() = default;
 

@@ -1,4 +1,4 @@
-#include "wav-file.h"
+#include "wav-file.hpp"
 
 int save_to_wav(const void *buffer, std::size_t buf_len, std::FILE *ofile,
         std::uint32_t block_rate, std::uint32_t byterate, std::uint16_t block_size,

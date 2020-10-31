@@ -2,7 +2,7 @@
 
 #include <vector>
 
-#include "synthesizer.h"
+#include "synthesizer.hpp"
 
 // New MIDI-like sequencer!
 

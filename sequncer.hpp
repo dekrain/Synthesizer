@@ -2,8 +2,8 @@
 
 #include <vector>
 
-#include "engine/audio_buffer.h"
-#include "synthesizer.h"
+#include "engine/audio_buffer.hpp"
+#include "synthesizer.hpp"
 
 struct SeqInstr {
 	ADSRInfo envelope;

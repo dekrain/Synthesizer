@@ -1,4 +1,4 @@
-#include "sampler.h"
+#include "sampler.hpp"
 
 bool SamplerVoice::step(AudioBuffer& buf) {
     size_t n_samples = buf.sz_blocks;

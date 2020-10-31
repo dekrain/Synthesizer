@@ -1,7 +1,7 @@
 #pragma once
 
 #include <cstdio>
-#include "engine/audio_buffer.h"
+#include "engine/audio_buffer.hpp"
 
 #define WAV_FMT_PCM 0x0001
 #define WAV_FMT_FLOAT 0x0003

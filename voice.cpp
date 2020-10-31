@@ -1,6 +1,6 @@
 #include <cmath>
 
-#include "voice.h"
+#include "voice.hpp"
 
 static const double TAU = 2 * std::acos(-1.0);
 

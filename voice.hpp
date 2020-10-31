@@ -3,8 +3,8 @@
 #include <cstddef>
 #include <array>
 
-#include "envelope.h"
-#include "engine/audio_buffer.h"
+#include "envelope.hpp"
+#include "engine/audio_buffer.hpp"
 
 class Voice {
 public:

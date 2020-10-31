@@ -1,5 +1,5 @@
-#include "synthesizer.h"
-#include "wav-file.h"
+#include "synthesizer.hpp"
+#include "wav-file.hpp"
 #include "seq-new.hpp"
 #include "midi.hpp"
 

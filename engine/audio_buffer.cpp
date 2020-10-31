@@ -1,5 +1,5 @@
 #include <cstring>
-#include "audio_buffer.h"
+#include "audio_buffer.hpp"
 
 AudioBuffer AudioBuffer::merge_buffers(const AudioBuffer& b1, const AudioBuffer& b2) {
     if (b1.i_block_rate != b2.i_block_rate

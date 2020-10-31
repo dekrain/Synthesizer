@@ -3,8 +3,8 @@
 #include <unordered_set>
 #include <memory>
 
-#include "voice.h"
-#include "envelope.h"
+#include "voice.hpp"
+#include "envelope.hpp"
 
 class Synthesizer {
     std::size_t m_sample_rate;

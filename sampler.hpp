@@ -1,6 +1,6 @@
 #pragma once
 
-#include "voice.h"
+#include "voice.hpp"
 
 class SamplerVoice : public Voice {
     size_t m_time;
