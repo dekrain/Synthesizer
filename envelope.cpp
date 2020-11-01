@@ -22,6 +22,8 @@ double ADSREnvelope::step(double dt) {
 }
 
 
+#if 0
+// EXPERIMENTAL
 double EnvelopeArt::get_value(double pos) {
     // ASSUME. this.total is valid total length
 
@@ -59,3 +61,4 @@ double EnvelopeArt::get_value(double pos) {
     // Linear interpolation
     return lerp(apos, bpos, aval, bval, pos);
 }
+#endif // EXPERIMENTAL

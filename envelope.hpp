@@ -31,6 +31,33 @@ public:
 	}
 };
 
+class Voice;
+
+class ADSRArticulator {
+    ADSREnvelope env;
+    double scale;
+    double Voice::* param;
+
+public:
+    ADSRArticulator(const ADSRInfo& adsr, double scale, double Voice::* param)
+        : env{adsr}, scale{scale}, param{param} {}
+
+    void release() {
+        env.release();
+    }
+
+    bool is_killed() const {
+        return env.is_killed();
+    }
+
+    // Step the envelope & modify the parameter
+    void step(Voice& voice, double dt) {
+        double v = scale * env.step(dt);
+        voice.*param = v;
+    }
+};
+
+#if 0
 // EXPERIMENTAL
 #include <vector>
 
@@ -54,3 +81,4 @@ struct EnvelopeArt {
 
     double get_value(double pos);
 };
+#endif // EXPERIMENTAL

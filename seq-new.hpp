@@ -19,8 +19,8 @@ struct SqEvent {
 };
 
 struct SqInstr {
-    /*ADSRInfo envelope;
-	WaveformVoice::OscShape osc_shape;*/
+    ADSRInfo envelope;
+	/*WaveformVoice::OscShape osc_shape;*/
     AdditiveVoice::Shape shape;
 };
 

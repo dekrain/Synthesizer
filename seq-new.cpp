@@ -41,7 +41,8 @@ AudioBuffer Sequencer::render(Synthesizer& synth) {
         if (ev.type == SqEventType::NOTE_ON) {
             active_notes.emplace(ev.note,
                 /*&synth.add_voice(std::make_unique<WaveformVoice>(m_instrument.envelope, note_pitch(ev.note), ev.volume, m_instrument.osc_shape))*/
-                &synth.add_voice(std::make_unique<AdditiveVoice>(m_instrument.shape, note_pitch(ev.note), ev.volume))
+                & synth.add_voice(std::make_unique<AdditiveVoice>(m_instrument.shape, note_pitch(ev.note), ev.volume))
+                . add_articulator(m_instrument.envelope, ev.volume, static_cast<double Voice::*>(&AdditiveVoice::m_volume))
             );
         }
 

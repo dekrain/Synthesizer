@@ -47,6 +47,7 @@ int main() {
 
 	//sequencer.set_instrument(SqInstr{ADSRInfo{0.0, .2, 0.2, 0.0}, WaveformVoice::SAW_OSC});
 	SqInstr saw_instr;
+	saw_instr.envelope = {.01, .3, .0, .0};
 	AdditiveVoice::shape_sawtooth(saw_instr.shape);
 	sequencer.set_instrument(saw_instr);
 
