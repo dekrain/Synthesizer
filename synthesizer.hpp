@@ -23,9 +23,11 @@ public:
 
 	std::size_t get_sample_rate() { return m_sample_rate; }
 
-	Voice* add_voice(const ADSRInfo& adsr, double pitch, double volume, WaveformVoice::OscShape shape);
-    Voice* add_additive_voice(double pitch, double volume, const AdditiveVoice::Shape& shape);
+    Voice& add_voice(std::unique_ptr<Voice> voice);
 
-    std::unique_ptr<AudioBuffer> step(std::size_t n_samples);
+	//Voice* add_voice(const ADSRInfo& adsr, double pitch, double volume, WaveformVoice::OscShape shape);
+    //Voice* add_additive_voice(double pitch, double volume, const AdditiveVoice::Shape& shape);
+
+    AudioBuffer step(std::size_t n_samples);
 };
 

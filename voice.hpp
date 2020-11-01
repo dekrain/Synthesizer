@@ -8,7 +8,7 @@
 
 class Voice {
 public:
-    virtual ~Voice() = default;
+    virtual ~Voice();
     // Every sample is added to that being in the buffer instead of replacing it
 	// @returns Should the voice be killed
     virtual bool step(AudioBuffer& buf) = 0;

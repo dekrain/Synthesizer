@@ -91,7 +91,7 @@ int main() {
 
 	seq_file.close();
 
-	std::unique_ptr<AudioBuffer> buffer = sequencer.render(synth);
+	auto buffer = sequencer.render(synth);
 
     std::FILE *f = std::fopen("synth-out.wav", "wb");
     if (!f) {
@@ -100,7 +100,7 @@ int main() {
     }
 
     //if (save_to_wav(buf, TIME2SAMPLE(3.5), f, SAMPLE_RATE, 2*SAMPLE_RATE, 2))
-	if (save_buffer_to_wav(*buffer, f)) {
+	if (save_buffer_to_wav(buffer, f)) {
 		return 1;
 	}
 

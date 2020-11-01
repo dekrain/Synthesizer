@@ -65,5 +65,5 @@ public:
         m_events.push_back(SqEvent{dt, volume, note, type});
     }
 
-    std::unique_ptr<AudioBuffer> render(Synthesizer& synth);
+    AudioBuffer render(Synthesizer& synth);
 };
